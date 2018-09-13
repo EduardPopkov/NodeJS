@@ -1,5 +1,19 @@
+//1
 console.log('Hello world');
 
-var name = process.argv[1];
+//2
+const name = process.argv[2];
+console.log(`Hi ${name}`);
 
-console.log(name);
+//3
+var arrayArgv = process.argv;
+
+var printRandomArgv =  function(arrayArgv) {
+  var rand = Math.floor(Math.random() * arrayArgv.length);
+  console.log('rand - ' + rand);
+  for (var i = 0; i < rand; i++) {
+    console.log(arrayArgv[i]);
+  }
+}
+
+printRandomArgv(arrayArgv);
