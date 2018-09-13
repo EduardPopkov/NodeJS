@@ -1,3 +1,6 @@
+var fs = require('fs');
+require('./summary');
+/*
 //1
 console.log('Hello world');
 
@@ -17,3 +20,6 @@ var printRandomArgv =  function(arrayArgv) {
 }
 
 printRandomArgv(arrayArgv);
+*/
+
+//console.log(dir);
